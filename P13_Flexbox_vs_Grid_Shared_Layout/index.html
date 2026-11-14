@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P13 - Choosing Between Flexbox and Grid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Flexbox for 1D Navbar -->
+  <header class="topbar">
+    <h2>Dashboard (Grid + Flexbox)</h2>
+    <nav class="top-links">
+      <a href="#">Overview</a>
+      <a href="#">Reports</a>
+      <a href="#">Settings</a>
+    </nav>
+  </header>
+
+  <!-- CSS Grid for 2D Page Layout (Sidebar + Main Content) -->
+  <div class="page-grid">
+    <aside class="sidebar">
+      <h3>Navigation</h3>
+      <ul>
+        <li>Module 1: Git</li>
+        <li>Module 2: HTML/CSS</li>
+        <li>Module 3: Grid</li>
+      </ul>
+    </aside>
+
+    <main class="main-panel">
+      <h3>Why Both Are Used Together</h3>
+      <p><strong>CSS Grid</strong> handles the overall two-dimensional page skeleton (Sidebar + Main Panel + Card Matrix).</p>
+      <p><strong>Flexbox</strong> handles one-dimensional alignment inside components like the top navbar and card action bars.</p>
+
+      <div class="mini-cards">
+        <div class="m-card">Flexbox: 1D Row/Column</div>
+        <div class="m-card">Grid: 2D Rows &amp; Columns</div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
